@@ -1,7 +1,7 @@
 # Telegram-XOGame
 Two Player XO Game Bot For Telegram
 
-Demo: [@g4u_bot](https://telegram.me/g4u_bot)
+bot: [@XoGameRoBot](https://telegram.me/XoGameRoBot)
 
 Language : [Persian](https://en.wikipedia.org/wiki/Persian)
 
