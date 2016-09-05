@@ -153,7 +153,7 @@ function processMessage($message) {
             "inline_keyboard"=>array(
 			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/NobLest")),
 				array(array("text"=>"کانال ما","url"=>"https://telegram.me/TeleBlasterTeam")),
-			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms")))
+			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))),
 			)
 		)));
     } 
