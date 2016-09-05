@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', 'توکن شما');
+define('BOT_TOKEN', '243116654:AAGdUmMfOVcxiwnKQ5jSpgQbahVGXwA5EbA');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -335,7 +335,7 @@ function callbackMessage($callback){
 							}
 						}
 						
-						$Tab[3][0]["text"]="ترک بازی!";
+						$Tab[3][0]["text"]="";
 			            $Tab[3][0]["callback_data"]="Left";
                         //apiRequest("sendMessage",array("chat_id"=>111825543,"text"=>json_encode($Tab)));						
 						//Tab
