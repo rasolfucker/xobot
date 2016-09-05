@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '243116654:AAE52fG_yyfzLUbYZTH1sz1F0rSlfpFASng');
+define('BOT_TOKEN', 'Your Token');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -149,11 +149,11 @@ function processMessage($message) {
     $text = $message['text'];
 
     if (strpos($text, "/start") === 0) {
-      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "اگه تو هم تلگرامت آپدیت باشه این دکمه های شیشه ای رو دیدی صددرصد\n ما با همین دکمه ها براتون چند تا بازی آماده کردیم مثل ایکس او و سنگ کاغذ قیچی \n اگه مایلی با دوستات بازی کنی روی لینک زیر کلیک کن. بعد دوستتو انتخاب کن و منتظر باش که بااکس اینلاین ظاهر شه", 'reply_markup' => array(
+      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "سلام خوش آمدید ربات بازی ایکس او جهت شروع بازی برروی دکله بازیxo کلیک نمایید وسپس دوست خودرا جهت بازی بااو انتخاب نمایید /nبا تشکر", 'reply_markup' => array(
             "inline_keyboard"=>array(
 			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/NobLest")),
 				array(array("text"=>"کانال ما","url"=>"https://telegram.me/TeleBlasterTeam")),
-			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))
+			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))),array("text"=>"⬅️⬅️⬅️","callback_data"=>"m"))
 			)
 		)));
     } 
