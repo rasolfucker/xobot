@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '243116654:AAGdUmMfOVcxiwnKQ5jSpgQbahVGXwA5EbA');
+define('BOT_TOKEN', '243116654:AAFBERaXkT0fJtm4LOrOM5QLBtMSdZ1Kjls');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -201,7 +201,7 @@ function callbackMessage($callback){
 					  $Tab[$i][$j]["callback_data"]=$i.".".$j."_0.0.0.0.0.0.0.0.0_".$Player1.".".$Player2."_1_0";
 				  }
 			  }
-			  $Tab[3][0]["text"]="ترک بازی!";
+			  $Tab[3][0]["text"]="";
 			  $Tab[3][0]["callback_data"]="Left";
 			  
 			  apiRequest("editMessageText",array("inline_message_id"=>$message_id,"text"=>"بازی آغاز شد\n\n بازیکن اول:$P1Name(❌)\nبازیکن دوم:$P2Name(⭕️)\n\n هم اکنون نوبت $P1Name(❌) است.","reply_markup"=>array(
