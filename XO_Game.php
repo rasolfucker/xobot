@@ -154,7 +154,7 @@ function processMessage($message) {
 			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/@Abmwn")),
 			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))),array("text"=>"⬅️⬅️⬅️","callback_data"=>"m"))
 			)
-		));
+		)));
     } 
   }
 }
