@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '');
+define('BOT_TOKEN', '238646855:AAFxr3E2_m_GR4VN3Mri4hjVnLNaT6aZAOE');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -154,7 +154,7 @@ function processMessage($message) {
 			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/@Abmwn")),
 			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))),array("text"=>"⬅️⬅️⬅️","callback_data"=>"m"))
 			)
-		)));
+		));
     } 
   }
 }
