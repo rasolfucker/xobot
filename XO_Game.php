@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '243116654:AAFBERaXkT0fJtm4LOrOM5QLBtMSdZ1Kjls');
+define('BOT_TOKEN', '238646855:AAH2ZRIqDqBbU90fNsrBgIWRL8oN9k6hl1c');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -151,8 +151,7 @@ function processMessage($message) {
     if (strpos($text, "/start") === 0) {
       apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "سلام خوش آمدید به ربات بازی ایکس او برای اجرای  بازی ابتدا برروی دکمه بازی xo کلیک نمایید وسپس دوست خودرا جهت بازی انتخاب نمایید .", 'reply_markup' => array(
             "inline_keyboard"=>array(
-			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/NobLest")),
-				array(array("text"=>"کانال ما","url"=>"https://telegram.me/TeleBlasterTeam")),
+			    array(array("text"=>"توسعه دهنده","url"=>"https://telegram.me/@Abmwn")),
 			    array(array("text"=>"بازی XO","switch_inline_query"=>md5(date("YMDms"))),array("text"=>"⬅️⬅️⬅️","callback_data"=>"m"))
 			)
 		)));
